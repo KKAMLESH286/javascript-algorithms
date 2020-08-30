@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background: #3a86ff;
+  }
+  textarea {
+    padding: 10px;
+    min-width: 200px;
+    width: 50vw;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  #array {
+    background: #efefef;
+    border: 1px dashed #333;
+    padding: 10px;
+    width: 50vw;
+    min-width: 200px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    color: #ff006e;
+    border-radius: 10px;
+  }
