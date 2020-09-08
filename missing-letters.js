@@ -1,18 +1,13 @@
-let str = 'abde';
-let alphabets = 'abcdefghijklmnopqrstuvwxyz'
-let arr = [];
-for (let i=0; i<str.length;i++){
-  
-console.log(str.charCodeAt(i));
-arr.push(str.charCodeAt(i));
+function fearNotLetter(str) {
+  for (var i = 0; i < str.length; i++) {
+    var code = str.charCodeAt(i);
+
+    if (code !== str.charCodeAt(0) + i) {
+      return String.fromCharCode(code - 1);
+    }
+  }
+  return undefined;
 }
 
-let newArr = [arr[0]];
-
-let i = 0;
-do {
-  
-  let newwArr = arr[i]+1;
-  newArr.push(newwArr);
-  i = i + 1;
-  } while (arr[i]<arr[arr.length-1]);
+// test here
+fearNotLetter("abce");
